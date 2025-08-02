@@ -131,16 +131,21 @@ function mostraAlternativas(){
 }
 
 function respostaSelecionada(opcaoSelecionada){
-    const afirmacao = opcaoSelecionada.afirmacao;
-    historiaFinal += afirmacao + " ";
-         atual++,
-         mostraPergunta();
+        const afirmacoes = aleatorio(opcaoSelecionada.afirmacao);
+        historiaFinal += afirmacoes + " ";
+        atual++;
+        mostraPergunta();
 }
 
 function mostraResultado() {
     caixaPerguntas.textContent = "Em um lindo dia em um apocalipse zumbi...";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
+}
+
+function aleatorio (lista){
+        const posicao = Math.floor(Math.random()* lista.length);
+        return lista[posicao];
 }
 
 mostraPergunta()
