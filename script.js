@@ -99,7 +99,7 @@ const perguntas = [
                 texto: "Deixei a médica.",
                 afirmacao: [
                     "Você deixou a única pessoa que poderia salvar a humaniade e agora o mundo está em meio a um apocalipse zumbi. Todos aqueles que você conhece morreram e agora, em meio a esse desastre, você também virou zumbi! Porém, ops, náo se preocupe, seu alarme está tocando e você percebe que tudo foi um sonho, ainda bem!",
-                    "Por ter deixado a médica para trás, a única esperança da humanidade estava transformada em zumbi, e em pouco tempo, o mundo todo entrou em um apocalípse zumbi, onde você também virou um zumbi, e acabou matando diversas pessoas, e assim, não existia mais vida no planeta Terra.  Porém, ops, náo se preocupe, seu alarme está tocando e você percebe que tudo foi um sonho, ainda bem!"
+                    "Por ter deixado a médica para trás, a única esperança da humanidade estava transformada em zumbi, e em pouco tempo, o mundo todo entrou em um apocalípse zumbi, onde você também virou um zumbi, e acabou matando diversas pessoas, e assim, não existia mais vida no planeta Terra.  Porém, ufa, náo se preocupe, seu alarme está tocando e você percebe que tudo foi um sonho, ainda bem!"
                 ]
             }
     ]
