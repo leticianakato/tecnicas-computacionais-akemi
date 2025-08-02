@@ -7,14 +7,16 @@ export const perguntas = [
                 afirmacao: [
                     "Ficou encantado(a) com a notícia da descoberta para a cura do câncer, sem se preocupar com sua eficácia ou efeitos colaterais.",
                     "Achou a notícia maravilhosa, postou nas redes sociais sobre e saiu espalhando a grande novidade que mudaria o mundo inteiro."
-                ]
+                ],
+                proxima: 1,
             },
             {
                 texto: "Ficar desconfiado(a) e pesquisar sobre os resultados do tratamento.",
                 afirmacao: [
                     "Ficou com um pé atrás sobre a notícia relacionada a cura para o câncer, pois havia sido liberada sem as medidas necessárias de estudos para um medicamento que cura uma doença tão séria capaz de afetar todo o organismo.",
                     "Achou a notícia muito precipitada, tentou pesquisar sobre, porém ao o que tudo indicava, só haviam benefícios nessa descoberta."   
-                ]
+                ],
+                proxima: 1,
             }
     ]
 },
@@ -27,14 +29,16 @@ export const perguntas = [
                 afirmacao: [
                     "Entrou em desespero em meio a uma situação de risco e correu para onde todos estavam indo.",
                     "Sua mente estava atordoada e assustada, então seguiu o instinto humano de fugir sem pensar no perigo que havia ali, apenas tentando sobreviver."
-                ]
+                ],
+                proxima: 2,
             },
             {
                 texto: "Volta para casa e procura entender o que está acontecendo.",
                 afirmacao: [
                     "Se manteve calmo(a) e tentou voltar para casa onde sabia que era seguro.",
                     "Mesmo com medo, você seguiu sua racionalidade e tentou voltar ao local que sabia que era seguro, sua casa."
-                ]
+                ],
+                proxima: 2,
             }
     ]
     },
@@ -47,34 +51,38 @@ export const perguntas = [
                 afirmacao: [
                     "O desespero tomou conta de você e não conseguia fazer mais nada além de correr.",
                     "Com toda a situação apocalíptica que o mundo estava se deparando, o terror tomou conta de diversos cidadãos, inclusive você, que continuou correndo junto a multidão."
-                ]
+                ],
+                proxima: 3,
             },
             {
                 texto: "Procura um abrigo mais próximo possível.",
                 afirmacao: [
                     "Após essa situação desesperadora, entendeu que não era possível voltar para casa, portanto, tentou buscar um lugar mais próximo.",
                     "Você percebeu o que estava acontecendo, lembrou da notícia que havia aparecido nos jornais, então, em meio ao caos, tentou se manter lógico(a) e procurar um abrigo perto."
-                ]
+                ],
+                proxima: 3,
             }
     ]
     },
 
      {
-        enunciado: "Você encontra um desses seres atacando uma pessoa. O que você faz?", 
+        enunciado: "você encontra um desses seres atacando uma pessoa. O que você faz?", 
     alternativas: [
                 {
                 texto:  "Tenta ajudar.", 
                 afirmacao: [
                     "Naquele caos, mantendo a calma, escolheu ajudar a alguém que estava prestes a ser atacada.",
                     "Mesmo atordoado(a), ajudou a pessoa em situação de vida ou morte."
-                ]
+                ],
+                proxima: 4,
             },
             {
                 texto:  "Continua fugindo.",
                 afirmacao: [
                     "O medo tomou conta do seu corpo, você deixa a pessoa para trás, pois seu corpo só pensa em si nesse momento.",
                     "Seguindo seus instintos humanos, apenas pensou em si e na sua vida, deixando a pessoapara trás."
-                ]
+                ],
+                proxima: 4,
             }
     ]
     },
@@ -87,14 +95,14 @@ export const perguntas = [
                 afirmacao: [
                     "Por sorte, a mulher que você salvou era a médica que descobriu a cura para o câncer, e ela sabia perfeitamente onde tinha errado, assim sabia como obter a cura. No fim, vocês dois(uas) salvaram a humanidade de um apocalipse zumbi! Porém, ops, você acordou com seu alarme tocando, e percebeu que no fim tudo foi um sonho! OBS: Para de ter síndrome de protagonista.",
                     "Assim que você conversou com a doutora que salvou, passaram a elaborar meios de curar aquele apocalípse zumbi causado numa tentativa falha de curar o câncer. No fim, vocês dois(uas) salvaram a humanidade de um apocalipse zumbi! Porém, ops, você acordou com seu alarme tocando, e percebeu que no fim tudo foi um sonho! OBS: Para de ter síndrome de protagonista."
-                ]
+                ],
             },
             {
                 texto: "Deixei a médica.",
                 afirmacao: [
                     "Você deixou a única pessoa que poderia salvar a humaniade e agora o mundo está em meio a um apocalipse zumbi. Todos aqueles que você conhece morreram e agora, em meio a esse desastre, você também virou zumbi! Porém, ops, náo se preocupe, seu alarme está tocando e você percebe que tudo foi um sonho, ainda bem!",
                     "Por ter deixado a médica para trás, a única esperança da humanidade estava transformada em zumbi, e em pouco tempo, o mundo todo entrou em um apocalípse zumbi, onde você também virou um zumbi, e acabou matando diversas pessoas, e assim, não existia mais vida no planeta Terra.  Porém, ufa, náo se preocupe, seu alarme está tocando e você percebe que tudo foi um sonho, ainda bem!"
-                ]
+                ],
             }
     ]
     },
