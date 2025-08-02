@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&display=swap');
 :root {
   --cor-fundo: #020f02;
   --cor-principal: #0b200e ;
@@ -9,6 +10,7 @@
 body {
   background-color: var(--cor-fundo);
   color: var(--cor-texto);
+  font-family: "Bitcount Prop Single", system-ui;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,6 +28,10 @@ h1{
  color: var(--cor-destaque);
 }
 
+h1, .caixa-perguntas, .caixa-resultado{
+      font-family: "Bitcount Prop Single", system-ui;
+}
+
 button {
   background-color: var(--cor-secundaria);
   color: var(--cor-texto);
@@ -38,4 +44,18 @@ button {
 button:hover {
   background-color: var(--cor-destaque);
   color: var(--cor-principal);
+}
+
+.caixa-alternativas{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.caixa-resultado{
+    display: none;
+}
+
+.caixa-resultado.mostrar{
+    display: block;
 }
