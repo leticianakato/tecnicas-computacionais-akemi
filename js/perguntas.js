@@ -1,10 +1,4 @@
-const caixaPrincipal = document.querySelector(".caixa-principal");
-const caixaPerguntas = document.querySelector(".caixa-perguntas");
-const caixaAlternativas = document.querySelector(".caixa-alternativas");
-const caixaResultado = document.querySelector(".caixa-resultado");
-const textoResultado = document.querySelector(".texto-resultado");
-
-const perguntas = [
+export const perguntas = [
     {
     enunciado: "Em uma linda manhã, você vê no noticiário que encontraram a cura para o câncer com medicamentos nunca utilizados antes, mas que mostram muita eficácia nas primeiras horas. A OMS empolgada com os resultados libera o tratamento sem checar as reações adversas. Qual sua reação?", 
     alternativas: [
@@ -105,47 +99,3 @@ const perguntas = [
     ]
     },
 ];
-
-let atual = 0;
-let perguntaAtual;
-let historiaFinal = "";
-
-function mostraPergunta() {
-        if (atual >= perguntas.length) {
-        mostraResultado();
-        return;
-    }
-    perguntaAtual = perguntas[atual];
-    caixaPerguntas.textContent = perguntaAtual.enunciado;
-     caixaAlternativas.textContent = "";
-    mostraAlternativas();
-}
-
-function mostraAlternativas(){
-    for(const alternativa of perguntaAtual.alternativas) {
-        const botaoAlternativa = document.createElement("button");
-        botaoAlternativa.textContent = alternativa.texto;
-        botaoAlternativa.addEventListener("click", () => respostaSelecionada(alternativa));
-        caixaAlternativas.appendChild(botaoAlternativa);
-    }
-}
-
-function respostaSelecionada(opcaoSelecionada){
-        const afirmacoes = aleatorio(opcaoSelecionada.afirmacao);
-        historiaFinal += afirmacoes + " ";
-        atual++;
-        mostraPergunta();
-}
-
-function mostraResultado() {
-    caixaPerguntas.textContent = "Em um lindo dia em um apocalipse zumbi...";
-    textoResultado.textContent = historiaFinal;
-    caixaAlternativas.textContent = "";
-}
-
-function aleatorio (lista){
-        const posicao = Math.floor(Math.random()* lista.length);
-        return lista[posicao];
-}
-
-mostraPergunta()
